@@ -56,16 +56,16 @@
 
     function sort(nums) {
         let numsToSort = JSON.parse(JSON.stringify(nums));
-        let isAnySortingThisRound = false;
+        let isAnySortingDoneThisRound = false;
         do {
-            isAnySortingThisRound = false;
+            isAnySortingDoneThisRound = false;
             for (let i = 0; i < numsToSort.length - 1; i++) {
                 if (isNumsCurrElemGreaterThanNext(numsToSort, i)) {
-                    isAnySortingThisRound = true;
+                    isAnySortingDoneThisRound = true;
                     swap(numsToSort, i, i + 1);
                 }
             }
-        } while (isAnySortingThisRound);
+        } while (isAnySortingDoneThisRound);
         return numsToSort;
     }
 
