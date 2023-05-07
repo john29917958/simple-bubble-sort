@@ -1,2 +1,2 @@
-# simple-bubble-sort
+# Simple Bubble Sort
 A simple bubble sort web app.
